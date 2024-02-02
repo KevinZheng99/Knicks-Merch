@@ -1,9 +1,11 @@
 import React from "react";
 import Box from "@mui/material/Box";
+import NavigationBar from "../../components/NavigationBar";
 
 const Women = () => {
   return (
     <>
+      <NavigationBar />
       <Box
         sx={{
           width: "100%",
