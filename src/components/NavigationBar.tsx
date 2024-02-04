@@ -42,7 +42,7 @@ const NavigationBar = () => {
             cursor: "pointer",
             textShadow: "0 1px 1px #0009",
             boxShadow:
-              path === "/" || path === "/women" ? "0 1px 1px #0009" : "",
+              path === "/" || path === "/women" ? "0 1px 0px #0009" : "",
             borderBottom:
               path === "/" || path === "/women" ? "1px solid #fff" : "",
           }}
@@ -58,7 +58,7 @@ const NavigationBar = () => {
             fontWeight: "bold",
             cursor: "pointer",
             textShadow: "0 1px 1px #0009",
-            boxShadow: path === "/men" ? "0 1px 1px #0009" : "",
+            boxShadow: path === "/men" ? "0 1px 0px #0009" : "",
             borderBottom: path === "/men" ? "1px solid #fff" : "",
           }}
           onClick={() => {
@@ -73,7 +73,7 @@ const NavigationBar = () => {
             fontWeight: "bold",
             cursor: "pointer",
             textShadow: "0 1px 1px #0009",
-            boxShadow: path === "/kids" ? "0 1px 1px #0009" : "",
+            boxShadow: path === "/kids" ? "0 1px 0px #0009" : "",
             borderBottom: path === "/kids" ? "1px solid #fff" : "",
           }}
           onClick={() => {

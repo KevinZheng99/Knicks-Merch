@@ -8,13 +8,32 @@ const Women = () => {
       <NavigationBar />
       <Box
         sx={{
-          width: "100%",
           height: "100vh",
-          backgroundImage: "url(HomePage.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          overflowY: "scroll",
+          scrollSnapType: "y mandatory",
+          scrollBehavior: "smooth",
         }}
-      />
+      >
+        <Box
+          sx={{
+            height: "100vh",
+            backgroundImage: "url(HomePage.jpg)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            scrollSnapAlign: "start",
+          }}
+        />
+        <Box
+          sx={{
+            height: "100vh",
+            backgroundImage: "url(WomenTShirt.jpg)",
+            backgroundSize: "contain",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            scrollSnapAlign: "start",
+          }}
+        />
+      </Box>
     </>
   );
 };
