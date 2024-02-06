@@ -26,9 +26,33 @@ const Women = () => {
         <Box
           sx={{
             height: "100vh",
-            backgroundImage: "url(WomenTShirt.jpg)",
+            backgroundImage: "url(WomenDenimJacket.jpg)",
+            backgroundSize: "cover",
+            scrollSnapAlign: "start",
+          }}
+        />
+        <Box
+          sx={{
+            height: "100vh",
+            backgroundImage: "url(WomenCropTee.jpg)",
             backgroundSize: "contain",
             backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            scrollSnapAlign: "start",
+          }}
+        />
+        <Box
+          sx={{
+            height: "100vh",
+            backgroundImage: "url(WomenKnicksTee.jpg)",
+            backgroundRepeat: "no-repeat",
+            scrollSnapAlign: "start",
+          }}
+        />
+        <Box
+          sx={{
+            height: "100vh",
+            backgroundImage: "url(WomenVintageBomber.jpg)",
             backgroundRepeat: "no-repeat",
             scrollSnapAlign: "start",
           }}
