@@ -1,7 +1,12 @@
 import React from "react";
+import NavigationBar from "../../components/NavigationBar";
 
-const men = () => {
-  return <div>men</div>;
+const Men = () => {
+  return (
+    <>
+      <NavigationBar />
+    </>
+  );
 };
 
-export default men;
+export default Men;

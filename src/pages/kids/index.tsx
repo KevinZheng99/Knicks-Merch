@@ -1,7 +1,12 @@
 import React from "react";
+import NavigationBar from "../../components/NavigationBar";
 
-const kids = () => {
-  return <div>kids</div>;
+const Kids = () => {
+  return (
+    <>
+      <NavigationBar />
+    </>
+  );
 };
 
-export default kids;
+export default Kids;

@@ -84,8 +84,20 @@ const NavigationBar = () => {
         </Typography>
       </Box>
       <Box sx={{ display: "flex", gap: "24px" }}>
-        <FavoriteBorderIcon sx={{ color: "white", cursor: "pointer" }} />
-        <ShoppingCartOutlinedIcon sx={{ color: "white", cursor: "pointer" }} />
+        <FavoriteBorderIcon
+          sx={{
+            color: "#f58426",
+            cursor: "pointer",
+            textShadow: "0 1px 1px #0009",
+          }}
+        />
+        <ShoppingCartOutlinedIcon
+          sx={{
+            color: "#f58426",
+            cursor: "pointer",
+            textShadow: "0 1px 1px #0009",
+          }}
+        />
       </Box>
     </Box>
   );
