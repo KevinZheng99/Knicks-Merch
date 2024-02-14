@@ -20,9 +20,52 @@ const NavigationBar = () => {
         position: "fixed",
         alignItems: "center",
         justifyContent: "space-evenly",
-        padding: "24px",
+        background: "white",
+        padding: "12px 24px",
       }}
     >
+      <Box sx={{ display: "flex", gap: "24px" }}>
+        <Typography
+          sx={{
+            color: "black",
+            fontWeight: "bold",
+            cursor: "pointer",
+            borderBottom:
+              path === "/" || path === "/women" ? "1px solid #000" : "",
+          }}
+          onClick={() => {
+            router.push("/women");
+          }}
+        >
+          Women
+        </Typography>
+        <Typography
+          sx={{
+            color: "black",
+            fontWeight: "bold",
+            cursor: "pointer",
+            borderBottom: path === "/men" ? "1px solid #000" : "",
+          }}
+          onClick={() => {
+            router.push("/men");
+          }}
+        >
+          Men
+        </Typography>
+        <Typography
+          sx={{
+            color: "black",
+            fontWeight: "bold",
+            cursor: "pointer",
+            borderBottom: path === "/kids" ? "1px solid #000" : "",
+          }}
+          onClick={() => {
+            router.push("/kids");
+          }}
+        >
+          Kids
+        </Typography>
+      </Box>
       <Box
         component="img"
         sx={{ cursor: "pointer" }}
@@ -34,55 +77,6 @@ const NavigationBar = () => {
           router.push("/women");
         }}
       />
-      <Box sx={{ display: "flex", gap: "80px" }}>
-        <Typography
-          sx={{
-            color: "white",
-            fontWeight: "bold",
-            cursor: "pointer",
-            textShadow: "0 1px 1px #0009",
-            boxShadow:
-              path === "/" || path === "/women" ? "0 1px 0px #0009" : "",
-            borderBottom:
-              path === "/" || path === "/women" ? "1px solid #fff" : "",
-          }}
-          onClick={() => {
-            router.push("/women");
-          }}
-        >
-          Women
-        </Typography>
-        <Typography
-          sx={{
-            color: "white",
-            fontWeight: "bold",
-            cursor: "pointer",
-            textShadow: "0 1px 1px #0009",
-            boxShadow: path === "/men" ? "0 1px 0px #0009" : "",
-            borderBottom: path === "/men" ? "1px solid #fff" : "",
-          }}
-          onClick={() => {
-            router.push("/men");
-          }}
-        >
-          Men
-        </Typography>
-        <Typography
-          sx={{
-            color: "white",
-            fontWeight: "bold",
-            cursor: "pointer",
-            textShadow: "0 1px 1px #0009",
-            boxShadow: path === "/kids" ? "0 1px 0px #0009" : "",
-            borderBottom: path === "/kids" ? "1px solid #fff" : "",
-          }}
-          onClick={() => {
-            router.push("/kids");
-          }}
-        >
-          Kids
-        </Typography>
-      </Box>
       <Box sx={{ display: "flex", gap: "24px" }}>
         <FavoriteBorderIcon
           sx={{
