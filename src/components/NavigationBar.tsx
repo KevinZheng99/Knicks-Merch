@@ -22,6 +22,7 @@ const NavigationBar = () => {
         justifyContent: "space-evenly",
         background: "white",
         padding: "12px 24px",
+        top: 0,
       }}
     >
       <Box sx={{ display: "flex", gap: "24px" }}>
