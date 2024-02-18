@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import SearchIcon from "@mui/icons-material/Search";
 
 const NavigationBar = () => {
   const router = useRouter();
@@ -87,6 +88,13 @@ const NavigationBar = () => {
           }}
         />
         <ShoppingCartOutlinedIcon
+          sx={{
+            color: "#f58426",
+            cursor: "pointer",
+            textShadow: "0 1px 1px #0009",
+          }}
+        />
+        <SearchIcon
           sx={{
             color: "#f58426",
             cursor: "pointer",

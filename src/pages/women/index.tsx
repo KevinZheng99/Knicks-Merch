@@ -3,6 +3,8 @@ import Box from "@mui/material/Box";
 import NavigationBar from "../../components/NavigationBar";
 import ImageContainer from "../../components/ImageContainer";
 import ImageCard from "../../components/ImageCard";
+import ImageCarousel from "../../components/ImageCarousel";
+import { womenImages } from "../../consts";
 
 const Women = () => {
   return (
@@ -46,20 +48,16 @@ const Women = () => {
         />
       </ImageContainer>
       <ImageContainer>
-        <ImageCard imgSrc="WomenKnicksCrop.jpg" title="Women Knicks Crop" />
-        <ImageCard imgSrc="WomenKnicksCrop2.jpg" title="Women Knicks Crop 2" />
-      </ImageContainer>
-
-      <ImageContainer>
-        <ImageCard
-          imgSrc="WomenKnicksClothing7.jpg"
-          title="Women Knicks Clothing 7"
-        />
         <ImageCard
           imgSrc="WomenKnicksClothing6.jpg"
           title="Women Knicks Clothing 6"
         />
+        <ImageCard
+          imgSrc="WomenKnicksClothing7.jpg"
+          title="Women Knicks Clothing 7"
+        />
       </ImageContainer>
+      <ImageCarousel images={womenImages} />
     </>
   );
 };

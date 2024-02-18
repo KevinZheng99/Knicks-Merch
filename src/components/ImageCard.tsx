@@ -11,6 +11,7 @@ const ImageCard = ({ imgSrc, title }) => {
         height: "auto",
         display: "inline-block",
         objectFit: "cover",
+        cursor: "zoom-in",
       }}
       src={imgSrc}
       alt={title}
