@@ -32,12 +32,12 @@ export const womenImages = [
     description: "Women Knicks Jersey 2",
   },
   {
-    imgSrc: "WomenKnicksClothing7.jpg",
-    description: "Women Knicks Clothing 7",
-  },
-  {
     imgSrc: "WomenKnicksClothing6.jpg",
     description: "Women Knicks Clothing 6",
+  },
+  {
+    imgSrc: "WomenKnicksClothing7.jpg",
+    description: "Women Knicks Clothing 7",
   },
 ];
 
@@ -51,12 +51,12 @@ export const menImages = [
     description: "Carmelo Clothing 2",
   },
   {
-    imgSrc: "AmariClothing.jpg",
-    description: "Amari Clothing",
-  },
-  {
     imgSrc: "AmariClothing2.jpg",
     description: "Amari Clothing 2",
+  },
+  {
+    imgSrc: "AmariClothing.jpg",
+    description: "Amari Clothing",
   },
   {
     imgSrc: "KithClothing.jpg",
