@@ -1,14 +1,32 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import ImageCard from "./ImageCard";
+import Carousel from "react-material-ui-carousel";
 
-const ImageCarousel = ({ images }) => {
+const ImageCarousel = ({ images, isOpen }) => {
   return (
-    <Box>
-      {images.map((image) => (
-        <img src={image.imgSrc} alt={image.description} />
+    <Carousel
+      sx={{
+        display: isOpen ? "block" : "none",
+        width: "30vw",
+        margin: "auto",
+      }}
+      autoPlay={false}
+    >
+      {images.map((image, i) => (
+        <Box
+          key={i}
+          component="img"
+          sx={{
+            width: "30vw",
+            height: "90vh",
+            display: "inline-block",
+            objectFit: "cover",
+          }}
+          src={image.imgSrc}
+          alt={image.description}
+        />
       ))}
-    </Box>
+    </Carousel>
   );
 };
 

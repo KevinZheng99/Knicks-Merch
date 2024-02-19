@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 
-const ImageCard = ({ imgSrc, title }) => {
+const ImageCard = ({ imgSrc, title, handleFocus }) => {
   return (
     <Box
       component="img"
@@ -15,6 +15,7 @@ const ImageCard = ({ imgSrc, title }) => {
       }}
       src={imgSrc}
       alt={title}
+      onClick={handleFocus}
     />
   );
 };
