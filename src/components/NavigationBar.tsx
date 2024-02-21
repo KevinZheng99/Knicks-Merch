@@ -19,7 +19,6 @@ const NavigationBar = () => {
         width: "100%",
         position: "fixed",
         alignItems: "center",
-        justifyContent: "space-between",
         background: "white",
         padding: "12px 24px",
         top: 0,
@@ -29,7 +28,7 @@ const NavigationBar = () => {
         sx={{
           display: "flex",
           gap: "24px",
-          width: "calc(50% - 100px)",
+          width: "50%",
           justifyContent: "center",
         }}
       >
@@ -91,20 +90,18 @@ const NavigationBar = () => {
         sx={{
           display: "flex",
           gap: "24px",
-          width: "calc(50% - 100px)",
+          width: "50%",
           justifyContent: "center",
         }}
       >
         <SearchIcon
           sx={{
-            color: "#f58426",
             cursor: "pointer",
             textShadow: "0 1px 1px #0009",
           }}
         />
         <ShoppingCartOutlinedIcon
           sx={{
-            color: "#f58426",
             cursor: "pointer",
             textShadow: "0 1px 1px #0009",
           }}

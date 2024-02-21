@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
 import NavigationBar from "../../components/NavigationBar";
 import ImageContainer from "../../components/ImageContainer";
 import ImageCard from "../../components/ImageCard";
 import ImageCarousel from "../../components/ImageCarousel";
 
 import { womenImages } from "../../consts";
-import { Typography } from "@mui/material";
 
 const Women = () => {
   const [open, setOpen] = useState(false);
@@ -24,21 +25,23 @@ const Women = () => {
         sx={{
           fontWeight: "bold",
           textAlign: "center",
-          cursor: "pointer",
         }}
       >
         Women Image Gallery
       </Typography>
-      <Typography
+      <Link
+        href="/women/shop"
         sx={{
+          display: "flex",
           fontWeight: "bold",
-          textAlign: "center",
-          cursor: "pointer",
+          color: "#f58426",
+          textDecoration: "none",
           marginBottom: "12px",
+          justifyContent: "center",
         }}
       >
         Shop Now
-      </Typography>
+      </Link>
       <ImageContainer>
         <ImageCard
           imgSrc="WomenKnicksClothing.jpg"
