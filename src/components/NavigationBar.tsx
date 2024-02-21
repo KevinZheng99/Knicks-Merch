@@ -4,7 +4,6 @@ import Typography from "@mui/material/Typography";
 
 import { useRouter } from "next/router";
 
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 
@@ -20,13 +19,20 @@ const NavigationBar = () => {
         width: "100%",
         position: "fixed",
         alignItems: "center",
-        justifyContent: "space-evenly",
+        justifyContent: "space-between",
         background: "white",
         padding: "12px 24px",
         top: 0,
       }}
     >
-      <Box sx={{ display: "flex", gap: "24px" }}>
+      <Box
+        sx={{
+          display: "flex",
+          gap: "24px",
+          width: "calc(50% - 100px)",
+          justifyContent: "center",
+        }}
+      >
         <Typography
           sx={{
             color: "black",
@@ -70,17 +76,26 @@ const NavigationBar = () => {
       </Box>
       <Box
         component="img"
-        sx={{ cursor: "pointer" }}
+        sx={{
+          cursor: "pointer",
+        }}
         src="/New_York_Knicks_logo.png"
-        width={62}
-        height={50}
+        width={78}
+        height={63}
         alt="Logo"
         onClick={() => {
           router.push("/women");
         }}
       />
-      <Box sx={{ display: "flex", gap: "24px" }}>
-        <FavoriteBorderIcon
+      <Box
+        sx={{
+          display: "flex",
+          gap: "24px",
+          width: "calc(50% - 100px)",
+          justifyContent: "center",
+        }}
+      >
+        <SearchIcon
           sx={{
             color: "#f58426",
             cursor: "pointer",
@@ -88,13 +103,6 @@ const NavigationBar = () => {
           }}
         />
         <ShoppingCartOutlinedIcon
-          sx={{
-            color: "#f58426",
-            cursor: "pointer",
-            textShadow: "0 1px 1px #0009",
-          }}
-        />
-        <SearchIcon
           sx={{
             color: "#f58426",
             cursor: "pointer",

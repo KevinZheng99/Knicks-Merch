@@ -6,6 +6,7 @@ import ImageCard from "../../components/ImageCard";
 import ImageCarousel from "../../components/ImageCarousel";
 
 import { womenImages } from "../../consts";
+import { Typography } from "@mui/material";
 
 const Women = () => {
   const [open, setOpen] = useState(false);
@@ -19,6 +20,25 @@ const Women = () => {
   return (
     <>
       <NavigationBar />
+      <Typography
+        sx={{
+          fontWeight: "bold",
+          textAlign: "center",
+          cursor: "pointer",
+        }}
+      >
+        Women Image Gallery
+      </Typography>
+      <Typography
+        sx={{
+          fontWeight: "bold",
+          textAlign: "center",
+          cursor: "pointer",
+          marginBottom: "12px",
+        }}
+      >
+        Shop Now
+      </Typography>
       <ImageContainer>
         <ImageCard
           imgSrc="WomenKnicksClothing.jpg"
