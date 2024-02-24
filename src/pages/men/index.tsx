@@ -6,7 +6,7 @@ import ImageCard from "../../components/ImageCard";
 import ImageCarousel from "../../components/ImageCarousel";
 import { menImages } from "../../consts";
 
-const Men = () => {
+export default function Men() {
   const [open, setOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -110,6 +110,4 @@ const Men = () => {
       />
     </>
   );
-};
-
-export default Men;
+}

@@ -11,14 +11,20 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "next.config.js",
-    "src/pages/index.js"
+    "src/pages/index.js",
+    ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }

@@ -4,6 +4,7 @@ import Men from "./men";
 import Kids from "./kids";
 import { useRouter } from "next/router";
 import "../styles/styles.css";
+import Shop from "./women/shop";
 
 export default function Home() {
   const router = useRouter();
@@ -17,6 +18,7 @@ export default function Home() {
       </Head>
 
       {path === "/" || path === "/women" ? <Women /> : <></>}
+      {path === "/women/shop" ? <Shop /> : <></>}
       {path === "/men" ? <Men /> : <></>}
       {path === "/kids" ? <Kids /> : <></>}
     </>

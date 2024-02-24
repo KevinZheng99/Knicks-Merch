@@ -41,6 +41,49 @@ export const womenImages = [
   },
 ];
 
+export const womenShopImages = [
+  {
+    imgSrc: "../WomenKnicksClothing.jpg",
+    description: "Women Knicks Clothing",
+  },
+  {
+    imgSrc: "../WomenKnicksClothing2.jpg",
+    description: "Women Knicks Clothing 2",
+  },
+  {
+    imgSrc: "../WomenKnicksClothing4.jpg",
+    description: "Women Knicks Clothing 4",
+  },
+  {
+    imgSrc: "../WomenKnicksClothing5.jpg",
+    description: "Women Knicks Clothing 5",
+  },
+  {
+    imgSrc: "../WomenKnicksSweater.jpg",
+    description: "Women Knicks Sweater",
+  },
+  {
+    imgSrc: "../WomenKnicksSweater2.jpg",
+    description: "Women Knicks Sweater 2",
+  },
+  {
+    imgSrc: "../WomenKnicksJersey.jpg",
+    description: "Women Knicks Jersey",
+  },
+  {
+    imgSrc: "../WomenKnicksJersey2.jpg",
+    description: "Women Knicks Jersey 2",
+  },
+  {
+    imgSrc: "../WomenKnicksClothing6.jpg",
+    description: "Women Knicks Clothing 6",
+  },
+  {
+    imgSrc: "../WomenKnicksClothing7.jpg",
+    description: "Women Knicks Clothing 7",
+  },
+];
+
 export const menImages = [
   {
     imgSrc: "CarmeloClothing.jpg",
